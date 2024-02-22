@@ -10,6 +10,26 @@
 ul{
     list-style-type: none;
 }
-.hero-second-title{
+.hero-second-title-none{
     display: none;
+}
+body{
+    font-family:"Roboto", serif;
+    line-height: auto;
+}
+.hero-title{
+    line-height:1.36;
+}
+.hero-button{
+    line-height:1.87;
+}
+.hero-second-description{
+    line-height:1.71;
+}
+.address-list-item{
+    line-height:1.71;
+}
+.header-nav-link , .footer-link{
+    font-family:"Raleway" , serif;
+    
 }

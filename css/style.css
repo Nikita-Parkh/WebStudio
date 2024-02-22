@@ -4,7 +4,12 @@
     --color-three:#757575;
     --color-for-first-third-background:#2F303A;
     --color-for-second-background:#F5F4FA;
+   
+    
 }
 ul{
     list-style-type: none;
+}
+.hero-second-title{
+    display: none;
 }

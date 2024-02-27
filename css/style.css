@@ -3,6 +3,7 @@
     --color-two:#212121;
     --color-three:#757575;
     --color-for-first-third-background:#2F303A;
+    --color-for-address: #ffffff99;
     --color-for-second-background:#F5F4FA;
 }
 ul{
@@ -13,6 +14,7 @@ ul{
 }
 .body{
     font-family:"Roboto", serif;
+
    
 }
 .header-nav-link , .footer-link{
@@ -26,7 +28,7 @@ ul{
 .header-nav-link{
     color:var(--color-one);
 }
-.Studio , .footer-Studio{
+.studio , .footer-studio{
     color:black;
 }
 .nav-list-link{
@@ -72,6 +74,7 @@ ul{
     height: 50px;
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    border: 1px;
 }
 .futures-title{
     font-weight: 700;
@@ -131,11 +134,12 @@ ul{
     width: 1600px;
     height: 252px;
     background-color: var(--color-for-first-third-background);
+    
 }
-.footer-Studio{
+.footer-studio{
     color: white;
 }
-.footer-Web{
+.footer-web{
     color: var(--color-one);
 }
 .address-list-item{
@@ -143,13 +147,16 @@ ul{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: white;;
+    color: white;
+    font-style: normal;
 }
 .address-list-item-link{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--color-for-address);
     text-decoration: none;
+    
+    
 }

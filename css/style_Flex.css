@@ -1,0 +1,316 @@
+:root{
+    --color-one:#2196F3;
+    --color-two:#212121;
+    --color-three:#757575;
+    --color-for-first-third-background:#2F303A;
+    --color-for-address: #ffffff99;
+    --color-for-second-background:#F5F4FA;
+}
+
+
+.body{
+    font-family:"Roboto", serif;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* outline: 1px solid red; */
+}
+/* .futures .container{ */
+   /* width: 1212px;  */
+   /* добавил ширь , потому-что не влазили никак в ряд элементы li в секции futures */
+/* } */
+ul{
+    list-style-type: none;
+}
+/* /* header ------------------------------------------------------------------------------------* */
+.header > .container {
+    display: flex;
+    align-items: center;
+    outline:none
+    
+}
+.header{
+    /* display:flex; */
+    background-color: rgb(255, 255, 255);
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+/* .header-nav , .header-nav-list ,.nav-list-item,.header-contact-list,.header-contact-item{ */
+    /* display:flex; */
+/* } */
+.header-nav-link , .footer-link{  
+    font-family:"Raleway" , serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+}
+.header-nav,.header-nav-list{
+    display:flex;
+    align-items: center;
+    /* outline: 2px solid red; */
+}
+.header-contact-list{
+    display: flex;
+    /* outline: 2px solid red; */
+}
+.header-nav-link{
+    color:var(--color-one);
+    margin-right:93px;
+}
+.studio , .footer-studio{
+    color:black;
+}
+.nav-list-link{
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: var(--color-two);
+    text-decoration: none;
+
+}
+.header-nav-list .nav-list-item:first-child .nav-list-link:hover {
+    color: var(--color-one);
+}
+.header-nav-list .nav-list-item{
+    margin-right:50px;
+}
+.header-nav-list .nav-list-item:nth-child(3){
+    margin-right:344px;
+}
+.header-contact-link-email:hover{
+    color: var(--color-one);
+}
+
+.header-contact-link , .header-contact-link-email{
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--color-three);
+}
+.header-contact-link-email{
+    margin-right:50px;
+}
+/* header -------------------------------------------------------------------------------------
+
+/* hero */
+.hero .container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   outline: none;
+
+}
+.hero{
+    display: flex;
+    background-color:var(--color-for-first-third-background);     
+    padding-top:200px;
+    padding-bottom:200px;    
+    text-align: center;
+
+}
+.hero-title{
+    display: flex;
+    /* outline: 2px solid red; */
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color:#fff;
+    /* display: inline-block; */
+    width: 700px;
+   
+}
+.hero-button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    background-color: var(--color-one);
+    color: white;
+    width: 216px;
+    height: 50px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    border: 1px;
+    margin: 30px auto 0 auto;
+   
+   
+}
+/* futures */
+.futures .container{
+    display: flex;
+    outline: none;
+}
+.futures{
+    padding-top:94px;  
+}
+.futures-title-none{
+    display: none;
+}
+.futures-list{
+    display: flex;
+    flex-direction: row;
+}
+.futures-title ,.futures-description{
+
+}
+.futures-item{
+    /* display: inline-block; */
+    margin-right:30px;
+    /* vertical-align: top; */
+}
+.futures-title{
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--color-two);
+    
+}
+.futures-description{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-three);
+    margin-top:10px;
+    width: 300px;
+    
+    
+    /* margin: 0 auto; */
+
+}
+.futures-list .futures-item:last-child {
+   
+}
+/* activities */
+.activities .container{
+    outline: none;
+}
+.activities{
+    padding-bottom:94px;
+    padding-top: 94px;
+}
+.activities-list,.activities-item.activities-img{
+   
+   
+}
+.activities-item{
+    /* display: inline-block; */
+}
+.activities-title{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    /* text-align: center; */
+    color: var(--color-two);
+    margin-bottom:50px;
+}
+.activities-img{
+    margin-right: 30px;
+    width: 370px;
+    height: 294px;
+}
+.activities-list{
+    display: flex;
+}
+.activities-item:last-child .activities-img{
+    margin-right: 0;  
+}
+/* team */
+.team{
+    padding-top:94px;
+    padding-bottom:94px;
+    background-color:var(--color-for-second-background)
+}
+.team-title{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;  
+    color: var(--color-two);
+    margin-bottom:50px;
+}
+.team-list{
+    display: flex;
+}
+.team-img{
+    width: 270px;
+    height: 260px;
+}
+.team-description{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: var(--color-two);
+    margin-top:30px;
+}
+.team-item-title{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: var(--color-three);
+    margin-top:10px;
+}
+.team-item{
+    /* display: inline-block; */
+    width: 270px;
+    height: 368px;
+    border-radius: 0 0 4px 4px;
+    /* padding-bottom:30px; */
+    margin-right:30px;
+    background-color: white;
+    /* text-align: center; */
+}
+.team-list .team-item:last-child{
+    margin-right: 0;
+}
+/* footer */
+.footer{
+    background-color: var(--color-for-first-third-background);
+    padding-top:60px;
+    padding-bottom:60px;
+    
+}
+.footer-studio{
+    color: white;
+}
+.footer-web{
+    color: var(--color-one);
+}
+.address-list-item{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: white;
+    font-style: normal;
+   
+}
+.address-list-item-link{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-for-address);
+    text-decoration: none;
+}
+.footer-address-list .address-list-item:first-child{
+    margin-top:20px;
+}
+.footer-address-list .address-list-item:nth-child(2){
+    margin-top:9px;
+}
+.footer-address-list .address-list-item:nth-child(3){
+    margin-top:9px;
+}

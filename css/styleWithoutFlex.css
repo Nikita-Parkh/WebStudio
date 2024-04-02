@@ -17,44 +17,28 @@
     padding: 0 15px;
     /* outline: 1px solid red; */
 }
-/* .futures .container{ */
-   /* width: 1212px;  */
+.futures .container{
+   width: 1212px; 
    /* добавил ширь , потому-что не влазили никак в ряд элементы li в секции futures */
-/* } */
+}
 ul{
     list-style-type: none;
 }
-/* /* header ------------------------------------------------------------------------------------* */
-.header > .container {
-    display: flex;
-    align-items: center;
-    outline:none
-    
-}
+/* header ------------------------------------------------------------------------------------*/
 .header{
-    /* display:flex; */
     background-color: rgb(255, 255, 255);
     padding-top: 24px;
     padding-bottom: 25px;
 }
-/* .header-nav , .header-nav-list ,.nav-list-item,.header-contact-list,.header-contact-item{ */
-    /* display:flex; */
-/* } */
+.header-nav , .header-nav-list ,.nav-list-item,.header-contact-list,.header-contact-item{
+    display: inline;
+}
 .header-nav-link , .footer-link{  
     font-family:"Raleway" , serif;
     text-decoration: none;
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
-}
-.header-nav,.header-nav-list{
-    display:flex;
-    align-items: center;
-    /* outline: 2px solid red; */
-}
-.header-contact-list{
-    display: flex;
-    /* outline: 2px solid red; */
 }
 .header-nav-link{
     color:var(--color-one);
@@ -94,18 +78,10 @@ ul{
 .header-contact-link-email{
     margin-right:50px;
 }
-/* header -------------------------------------------------------------------------------------
+/* header -------------------------------------------------------------------------------------*/
 
 /* hero */
-.hero .container{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   outline: none;
-
-}
 .hero{
-    display: flex;
     background-color:var(--color-for-first-third-background);     
     padding-top:200px;
     padding-bottom:200px;    
@@ -113,18 +89,17 @@ ul{
 
 }
 .hero-title{
-    display: flex;
-    /* outline: 2px solid red; */
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     color:#fff;
-    /* display: inline-block; */
+    display: inline-block;
     width: 700px;
    
 }
 .hero-button{
+    display:block;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -141,10 +116,6 @@ ul{
    
 }
 /* futures */
-.futures .container{
-    display: flex;
-    outline: none;
-}
 .futures{
     padding-top:94px;  
 }
@@ -152,23 +123,22 @@ ul{
     display: none;
 }
 .futures-list{
-    display: flex;
-    flex-direction: row;
+    
 }
 .futures-title ,.futures-description{
 
 }
 .futures-item{
-    /* display: inline-block; */
-    margin-right:30px;
-    /* vertical-align: top; */
+    display: inline-block;
+    /* margin-right:30px; */
+    vertical-align: top;
 }
 .futures-title{
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
     color: var(--color-two);
-    
+    /* остановился тут  */
 }
 .futures-description{
     font-weight: 400;
@@ -187,9 +157,6 @@ ul{
    
 }
 /* activities */
-.activities .container{
-    outline: none;
-}
 .activities{
     padding-bottom:94px;
     padding-top: 94px;
@@ -199,15 +166,13 @@ ul{
    
 }
 .activities-item{
-    /* display: inline-block; */
+    display: inline-block;
 }
 .activities-title{
-    display: flex;
-    justify-content: center;
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
-    /* text-align: center; */
+    text-align: center;
     color: var(--color-two);
     margin-bottom:50px;
 }
@@ -215,9 +180,6 @@ ul{
     margin-right: 30px;
     width: 370px;
     height: 294px;
-}
-.activities-list{
-    display: flex;
 }
 .activities-item:last-child .activities-img{
     margin-right: 0;  
@@ -229,24 +191,18 @@ ul{
     background-color:var(--color-for-second-background)
 }
 .team-title{
-    display: flex;
-    justify-content: center;
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;  
+    text-align: center;
     color: var(--color-two);
     margin-bottom:50px;
-}
-.team-list{
-    display: flex;
 }
 .team-img{
     width: 270px;
     height: 260px;
 }
 .team-description{
-    display: flex;
-    justify-content: center;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.03em;
@@ -254,8 +210,6 @@ ul{
     margin-top:30px;
 }
 .team-item-title{
-    display: flex;
-    justify-content: center;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.03em;
@@ -263,14 +217,14 @@ ul{
     margin-top:10px;
 }
 .team-item{
-    /* display: inline-block; */
+    display: inline-block;
     width: 270px;
     height: 368px;
     border-radius: 0 0 4px 4px;
     /* padding-bottom:30px; */
     margin-right:30px;
     background-color: white;
-    /* text-align: center; */
+    text-align: center;
 }
 .team-list .team-item:last-child{
     margin-right: 0;

@@ -255,6 +255,7 @@ ul{
     margin-right:30px;
     background-color: white;
     padding-bottom:30px;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 .team-list .team-item:last-child{
     margin-right: 0;
@@ -300,7 +301,7 @@ ul{
 }
 /* portfolio----------------------------------------------------------- */
 .portfolio{
-    padding: 94px 94px;
+    padding: 94px 0;
 }
 .noneElement-InPortfolio{
     display:none;
@@ -361,6 +362,9 @@ ul{
 }
 .card-list-item{
     flex-basis: calc((100% - 60px) / 3);
+}
+.card-list-item:hover{
+    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 .text-for-card{
     border-bottom:1px solid var(--color-for-border-inPortfolio);

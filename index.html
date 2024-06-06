@@ -61,7 +61,54 @@
             <h1 class="hero-title">
                 ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ
             </h1>
-            <button type="button" class="hero-button">Замовити послугу</button>
+            <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                 <button class="btn" data-modal-close><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="btn-svg">
+                    <path d="M15 4.10786L13.8921 3L9.5 7.39214L5.10786 3L4 4.10786L8.39214 8.5L4 12.8921L5.10786 14L9.5 9.60786L13.8921 14L15 12.8921L10.6079 8.5L15 4.10786Z" fill="black" />
+                  </svg>
+                </button>
+                 <form class="hero-form">
+                    <p class="hero-form-description">Залиште свої дані, ми вам передзвонимо</p>
+                    <label for="user_name" class="hero-label-first">Ім'я</label>
+                    <div class="form-container">
+                    <input type="text" name="user-name" id="user_name" required minlength="2" maxlength="15" class="hero-input">
+                    <svg 
+                    width="18px"
+                    height="18px"
+                    class="icon-hero-svg"
+                    >
+                    <use href="./images/symboldefs.svg#human"></use>
+                    </svg>
+                    </div>
+                    <label for="user_tel" class="hero-label-second">Телефон</label>
+                    <div class="form-container">
+                    <input type="tel" name="user-tel" id="user_tel" required minlength="10" maxlength="13" class="hero-input">
+                    <svg 
+                    width="18px"
+                    height="18px">
+                    <use href="./images/symboldefs.svg#number"></use>
+                    </svg>
+                    </div>
+                    <label for="user_email" class="hero-label-third">Пошта</label>
+                    <div class="form-container">
+                    <input type="email" name="user-email" id="user_email" required minlength="11" maxlength="25" class="hero-input">
+                    <svg 
+                    width="18px"
+                    height="18px">
+                    <use href="./images/symboldefs.svg#email"></use>
+                    </svg>
+                    </div>
+                    <label for="hero-area" class="hero-label-fourth">Коментар</label>
+                    <textarea name="textarea" id="hero-area" minlength="3" maxlength="250" class="hero-textarea" placeholder="Введіть текст"></textarea>
+                    <div class="hero-form-checkbox-container">
+                    <label for="hero_checkbox" class="checkbox-label">Погоджуюся з розсилкою та приймаю <span class="hero-checkbox-span"><a href="./" target="_blank">Умови договору</a></span></label>
+                    <input type="checkbox" id="hero_checkbox" name="hero-checkbox" required class="hero-form-input-checkbox">
+                    </div>
+                    <button class="hero-form-button" type="submit">Відправити</button>
+                 </form>
+                </div>
+               </div>
             </div>
         </section>
         <section class="futures">
@@ -376,8 +423,27 @@
             </li>
         </ul>
     </div>
+    <div class="footer-container-third">
+        <h3 class="footer-container-third-title">Підпишіться на розсилку</h3>
+        <form class="footer-form">
+        <ul class="footer-container-third-list">
+            <li class="footer-container-third-list-item">
+                <label for="tg"></label>
+                <input type="email" name="footer-email" id="tg" placeholder="E-mail" required class="footer-email-second">
+            </li>
+            <li class="footer-container-third-list-item">
+                <button class="footer-container-third-list-button" type="submit">Підписатися
+                    <svg height="24" width="24">
+                        <use href="./images/symboldefs.svg#tg"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </form>
+    </div>
     </div>
     </footer>
 </div>
+<script src="./js/modal.js"></script>
 </body>
 </html>

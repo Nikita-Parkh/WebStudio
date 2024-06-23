@@ -92,6 +92,11 @@ ul{
     background-color: var(--color-one);
     top: 44px;
     left: 0;
+    /* animation */
+    transition: transform 500ms;
+}
+.nav-list-link-studio:hover:after ,.nav-list-link-portfolio:hover:after{
+    transform: scale(0);
 }
 .nav-list-link-portfolio::after{
     content: "";
@@ -102,6 +107,8 @@ ul{
     background-color: var(--color-one);
     top: 44px;
     left: 0;
+    /* animation */
+   transition: transform 500ms;
 }
 .nav-list-link-portfolio{
     color: var(--color-one);
@@ -124,6 +131,10 @@ ul{
     color: var(--color-one);
     fill: var(--color-one);
 }
+.header-contact-item:hover .header-contact-link{
+    color: var(--color-one);
+    fill: var(--color-one);
+}
 
 .header-contact-link , .header-contact-link-email{
     font-weight: 500;
@@ -134,9 +145,8 @@ ul{
     fill: var(--color-three);
      /* animation */
     transition-property: color , fill;
-    transition-duration: none;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay:none;
 }
 .header-contact-item:not(:last-child){
     margin-right:30px;
@@ -504,6 +514,11 @@ svg[width="18px"][height="18px"]{
     justify-content: center;
     align-items: center;
 }
+.team-second-item-link{
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .team-second-item:hover .team-second-item-link{
     fill: white;
     background-color: var(--color-one);
@@ -559,9 +574,8 @@ svg[width="18px"][height="18px"]{
     align-items: center;
      /* animation */
     transition-property:fill;
-    transition-duration: none;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay:none;
 }
 .clients-item:hover .clients-link{
     fill: var(--color-one);
@@ -635,9 +649,8 @@ svg[width="18px"][height="18px"]{
 }
 .footer-container-second-list-item{
     transition-property: background-color;
-    transition-duration: none;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay:none;
 }
 .footer-container-second-list-item:hover{
     background-color: var(--color-one);
@@ -804,10 +817,10 @@ svg[width="18px"][height="18px"]{
     justify-content: center;
     align-items: center;
     opacity: 0.9;
+    /* animation */
     transition-property:transform;
-    transition-duration: none;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay:none;
 }
 .overlay-portfolio-description{
     font-weight: 400;

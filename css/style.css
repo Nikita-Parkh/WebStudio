@@ -132,6 +132,11 @@ ul{
     text-decoration: none;
     color: var(--color-three);
     fill: var(--color-three);
+     /* animation */
+    transition-property: color , fill;
+    transition-duration: none;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay:none;
 }
 .header-contact-item:not(:last-child){
     margin-right:30px;
@@ -541,12 +546,22 @@ svg[width="18px"][height="18px"]{
     border: 1px solid var(--color-fill);
     cursor: pointer;
     border-radius: 4px;
+     /* animation */
+    transition-property: border-color;
+    transition-duration: none;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay:none;
 }
 .clients-link{
     fill: var(--color-fill);
     display: flex;
     justify-content: center;
     align-items: center;
+     /* animation */
+    transition-property:fill;
+    transition-duration: none;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay:none;
 }
 .clients-item:hover .clients-link{
     fill: var(--color-one);
@@ -617,6 +632,12 @@ svg[width="18px"][height="18px"]{
     letter-spacing: 0.03em;
     color: var(--color-for-address);
     text-decoration: none;
+}
+.footer-container-second-list-item{
+    transition-property: background-color;
+    transition-duration: none;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay:none;
 }
 .footer-container-second-list-item:hover{
     background-color: var(--color-one);
@@ -783,6 +804,10 @@ svg[width="18px"][height="18px"]{
     justify-content: center;
     align-items: center;
     opacity: 0.9;
+    transition-property:transform;
+    transition-duration: none;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay:none;
 }
 .overlay-portfolio-description{
     font-weight: 400;

@@ -456,7 +456,7 @@ svg[width="18px"][height="18px"]{
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: white;
+    color: white
 }
 .activities-container{
     width: 370px;
@@ -810,7 +810,7 @@ svg[width="18px"][height="18px"]{
     flex-basis: calc((100% - 60px) / 3);
 }
 .card-list-item:hover{
-    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12)
 }
 .text-for-card{
     border-bottom:1px solid var(--color-for-border-inPortfolio);

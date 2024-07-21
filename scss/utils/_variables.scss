@@ -1,0 +1,43 @@
+:root{
+    --color-one:#2196F3;
+    --color-two:#212121;
+    --color-three:#757575;
+    --color-for-first-third-background:#2F303A;
+    --color-for-address: #ffffff99;
+    --color-for-second-background:#F5F4FA;
+    --color-for-border-inPortfolio:rgba(238, 238, 238, 1);
+    --color-for-img-InFutures: rgba(245, 244, 250, 1);
+    --color-for-BG-in-hero:rgba(47, 48, 58, 0.4);
+    --color-fill:rgba(175, 177, 184, 1);
+   --xolor-for-svg-footer: rgba(255, 255, 255, 0.1);
+   --color-for-focus-form:rgba(33, 33, 33, 0.2);
+   --color-for-textarea:rgba(117, 117, 117, 0.5);
+   --color-for-email-input-footer:rgba(255, 255, 255, 0.6);
+}
+// map-get//
+$fonts:(
+    font-family:"Roboto", serif ,
+    second-family:"Raleway" , serif
+);
+$colors: (
+    color-one:#2196F3,
+    color-two:#212121,
+    color-three:#757575,
+    color-for-first-third-background:#2F303A,
+    color-for-address: #ffffff99,
+    color-for-second-background:#F5F4FA,
+    color-for-border-inPortfolio:rgba(238, 238, 238, 1),
+    color-for-img-InFutures: rgba(245, 244, 250, 1),
+    color-for-BG-in-hero:rgba(47, 48, 58, 0.4),
+    color-fill:rgba(175, 177, 184, 1),
+    xolor-for-svg-footer: rgba(255, 255, 255, 0.1),
+    color-for-focus-form:rgba(33, 33, 33, 0.2),
+    color-for-textarea:rgba(117, 117, 117, 0.5),
+    color-for-email-input-footer:rgba(255, 255, 255, 0.6)
+);
+@function getFont($font){
+    @return map-get($fonts, $font)
+};
+@function getColor($color){
+    @return map-get($colors, $color)
+}
